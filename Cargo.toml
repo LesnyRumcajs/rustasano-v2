@@ -1,0 +1,13 @@
+[workspace.package]
+name = "rustasano-v2"
+authors = ["Lesny Rumcajs <lesny.rumcajs+github@gmail.com>"]
+repository = "https://github.com/LesnyRumcajs/rustasano-v2"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[workspace]
+members = [
+  "basics",
+]
+resolver = "2"

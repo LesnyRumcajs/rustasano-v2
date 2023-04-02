@@ -1,0 +1,14 @@
+[package]
+name = "basics"
+description = "Cryptopals set 1: basics"
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+authors.workspace = true
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+hex = "0.4"
+base64 = "0.2"
+itertools = "0.10"
