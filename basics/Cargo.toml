@@ -10,5 +10,5 @@ edition = "2021"
 [dependencies]
 anyhow = "1"
 hex = "0.4"
-base64 = "0.2"
+base64 = "0.21"
 itertools = "0.10"

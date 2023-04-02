@@ -1,7 +1,8 @@
-/// Convert hex-encoded input to a base64-encoded one. Fails if the input is invalid.
+use base64::{prelude::BASE64_STANDARD, Engine};
+
 pub fn hex_to_base64<S: AsRef<[u8]>>(input: S) -> anyhow::Result<String> {
     let raw = hex::decode(input)?;
-    Ok(base64::encode(&raw))
+    Ok(BASE64_STANDARD.encode(raw))
 }
 
 #[test]
