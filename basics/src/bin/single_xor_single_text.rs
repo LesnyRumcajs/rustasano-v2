@@ -5,7 +5,8 @@ fn main() -> anyhow::Result<()> {
         .nth(1)
         .ok_or_else(|| anyhow::anyhow!("No input provided!"))?;
 
-    println!("{}", crack_single_xor_cipher(input)?.0);
+    let input = hex::decode(input)?;
+    println!("{}", crack_single_xor_cipher(&input)?.0);
 
     Ok(())
 }
